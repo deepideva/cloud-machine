@@ -1,9 +1,10 @@
 {
   "name": "Cloud PC",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {
-      "version": "latest"
+      "password": "vcode",
+      "webPort": 6080
     }
   },
   "forwardPorts": [6080],
