@@ -1,9 +1,13 @@
 {
   "name": "Cloud PC",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
-    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "version": "latest"
+    }
   },
   "forwardPorts": [6080],
-  "hostRequirements": { "cpus": 4 }
+  "hostRequirements": {
+    "cpus": 4
+  }
 }
